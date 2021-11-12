@@ -1,7 +1,6 @@
 package br.com.fascari.solid.lsp;
 
 abstract public class NubankCard implements IPaymentInstrument {
-
     @Override
     public void validate() throws Exception {
         //validação básica
