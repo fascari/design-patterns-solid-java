@@ -1,7 +1,7 @@
 package br.com.fascari.solid.isp.vehicles;
 
-public class Motorcycle implements IVehicle, IVehicleMotorcycle{
-    public Motorcycle(String color, String year, double engine){
+public class Motorcycle implements IVehicle, IVehicleMotorcycle {
+    public Motorcycle(String color, String year, double engine) {
         configureMotorcycle(color, year, engine);
     }
 
