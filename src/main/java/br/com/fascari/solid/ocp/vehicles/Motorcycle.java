@@ -5,7 +5,6 @@ public class Motorcycle extends Vehicle {
         this.color = color;
         this.year = year;
         this.engine = engine;
-
         configureMotorcycle();
     }
 
