@@ -6,13 +6,10 @@ import br.com.fascari.solid.dip.model.MongoDBProduct;
 import br.com.fascari.solid.dip.model.MySQLProduct;
 
 public class DbProductFactory {
-
     public static IDbProduct create(Db type) {
-        if (type == Db.MYSQL) {
+        if (Db.MYSQL.equals(type)) {
             return new MySQLProduct();
-        }else {
-            return new MongoDBProduct();
         }
+        return new MongoDBProduct();
     }
-
 }
