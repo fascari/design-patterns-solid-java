@@ -1,5 +1,7 @@
 package br.com.fascari.gof.factory;
 
+import static br.com.fascari.gof.factory.TransportTypeFactory.getTransportType;
+
 public class TesteFactoryMethod {
 
     public static void main(String[] args) {
@@ -15,19 +17,5 @@ public class TesteFactoryMethod {
             return;
         }
         transportType.startTransport();
-    }
-
-    private static Transport getTransportType(String type) {
-        switch (type) {
-            case "uber":
-                return new CarTransport();
-            case "log":
-                return new MotorcycleTransport();
-            case "eats":
-                return new BikeTransport();
-            default:
-                System.out.println("Selecione o tipo de entrega");
-        }
-        return null;
     }
 }
