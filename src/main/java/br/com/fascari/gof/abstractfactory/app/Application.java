@@ -6,9 +6,9 @@ import br.com.fascari.gof.abstractfactory.factories.ITransportFactory;
 import br.com.fascari.gof.abstractfactory.landvehicles.ILandVehicle;
 
 public class Application {
-    private ILandVehicle vehicle;
-    private IAircraft aircraft;
-    private IBoat boat;
+    private final ILandVehicle vehicle;
+    private final IAircraft aircraft;
+    private final IBoat boat;
 
     public Application(ITransportFactory factory) {
         vehicle = factory.createTransportVehicle();
