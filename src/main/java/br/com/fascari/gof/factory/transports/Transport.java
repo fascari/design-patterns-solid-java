@@ -1,10 +1,9 @@
-package br.com.fascari.gof.factory;
+package br.com.fascari.gof.factory.transports;
 
 import br.com.fascari.gof.factory.vehicles.IVehicle;
 
 public abstract class Transport {
-
-    void startTransport() {
+    public void startTransport() {
         IVehicle vehicle = createTransport();
         vehicle.startRoute();
     }

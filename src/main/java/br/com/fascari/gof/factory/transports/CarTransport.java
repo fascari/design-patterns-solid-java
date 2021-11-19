@@ -1,4 +1,4 @@
-package br.com.fascari.gof.factory;
+package br.com.fascari.gof.factory.transports;
 
 import br.com.fascari.gof.factory.vehicles.Car;
 import br.com.fascari.gof.factory.vehicles.IVehicle;

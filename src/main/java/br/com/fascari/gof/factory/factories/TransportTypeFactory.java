@@ -1,4 +1,9 @@
-package br.com.fascari.gof.factory;
+package br.com.fascari.gof.factory.factories;
+
+import br.com.fascari.gof.factory.transports.BikeTransport;
+import br.com.fascari.gof.factory.transports.CarTransport;
+import br.com.fascari.gof.factory.transports.MotorcycleTransport;
+import br.com.fascari.gof.factory.transports.Transport;
 
 public abstract class TransportTypeFactory {
     public static Transport getTransportType(String type) {

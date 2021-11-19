@@ -1,6 +1,8 @@
 package br.com.fascari.gof.factory;
 
-import static br.com.fascari.gof.factory.TransportTypeFactory.getTransportType;
+import br.com.fascari.gof.factory.transports.Transport;
+
+import static br.com.fascari.gof.factory.factories.TransportTypeFactory.getTransportType;
 
 public class TesteFactoryMethod {
 
