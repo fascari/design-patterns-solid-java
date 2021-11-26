@@ -6,8 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Server {
-
-    private Map<String, String> users = new HashMap<>();
+    private final Map<String, String> users = new HashMap<>();
     private Middleware middleware;
 
 
@@ -21,7 +20,6 @@ public class Server {
             System.out.println("Seja Bem vindo!");
             return true;
         }
-
         return false;
     }
 
