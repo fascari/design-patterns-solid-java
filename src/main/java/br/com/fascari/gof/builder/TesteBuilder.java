@@ -14,14 +14,18 @@ public class TesteBuilder {
         CarBuilder builder = new CarBuilder();
         director.constructSedanCar(builder);
 
-        Car car = builder.build();
-        System.out.println(car.getCarType() + " produzido com sucesso!");
+        Car sedanCar = builder.build();
+        System.out.println(sedanCar.toString());
+
+        director.constructSportCar(builder);
+        Car sportCar = builder.build();
+        System.out.println(sportCar.toString());
 
         TruckBuilder truckBuilder = new TruckBuilder();
         director.constructTruck(truckBuilder);
 
         Truck truck = truckBuilder.build();
-        System.out.println("Caminhão: " + truck.result());
+        System.out.println(truck.toString());
 
     }
 }
