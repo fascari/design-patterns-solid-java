@@ -1,7 +1,7 @@
 package br.com.fascari.gof.bridge.platforms;
 
-public class TwitchTV implements IPlatform{
-    public TwitchTV(){
+public class TwitchTV implements IPlatform {
+    public TwitchTV() {
         configureRMTP();
         System.out.println("TwitchTV: Transmissão Iniciada");
     }

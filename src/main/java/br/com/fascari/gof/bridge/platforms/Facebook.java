@@ -2,7 +2,7 @@ package br.com.fascari.gof.bridge.platforms;
 
 public class Facebook implements IPlatform {
 
-    public Facebook(){
+    public Facebook() {
         configureRMTP();
         System.out.println("Facebook: Transmissão Iniciada");
     }

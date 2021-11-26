@@ -1,7 +1,7 @@
 package br.com.fascari.gof.bridge.platforms;
 
 public class YouTube implements IPlatform {
-    public YouTube(){
+    public YouTube() {
         configureRMTP();
         System.out.println("YouTube: Transmissão Iniciada");
     }
