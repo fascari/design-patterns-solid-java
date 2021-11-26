@@ -11,17 +11,14 @@ public class Car {
     private final Engine engine;
     private final Transmission transmission;
 
-    public Car(CarType carType,
-               int seats,
-               Engine engine,
-               Transmission transmission){
+    public Car(CarType carType, int seats, Engine engine, Transmission transmission) {
         this.carType = carType;
         this.seats = seats;
         this.engine = engine;
         this.transmission = transmission;
     }
 
-    public CarType getCarType(){
+    public CarType getCarType() {
         return carType;
     }
 
