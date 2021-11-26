@@ -11,7 +11,6 @@ public class TesteBuilder {
     public static void main(String[] args) {
         Director director = new Director();
 
-        //criando o carro
         CarBuilder builder = new CarBuilder();
         director.constructSedanCar(builder);
 
