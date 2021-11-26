@@ -2,7 +2,7 @@ package br.com.fascari.gof.adapter.payoneer;
 
 import br.com.fascari.gof.adapter.utils.Token;
 
-public class Payoneer implements IPayonnerPayments{
+public class Payoneer implements IPayonnerPayments {
     @Override
     public Token authToken() {
         return new Token();
