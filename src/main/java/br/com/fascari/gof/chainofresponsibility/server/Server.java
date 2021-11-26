@@ -15,8 +15,8 @@ public class Server {
         this.middleware = middleware;
     }
 
-    public boolean logIn(String email, String password){
-        if(middleware.check(email, password)){
+    public boolean logIn(String email, String password) {
+        if (middleware.check(email, password)) {
             System.out.println("Usuário autenticado com sucesso!");
             System.out.println("Seja Bem vindo!");
             return true;
@@ -25,7 +25,7 @@ public class Server {
         return false;
     }
 
-    public void registerUser(String email, String password){
+    public void registerUser(String email, String password) {
         users.put(email, password);
     }
 
@@ -33,7 +33,7 @@ public class Server {
         return users.containsKey(email);
     }
 
-    public boolean isValidPassword(String email, String password){
+    public boolean isValidPassword(String email, String password) {
         return users.get(email).equals(password);
     }
 }

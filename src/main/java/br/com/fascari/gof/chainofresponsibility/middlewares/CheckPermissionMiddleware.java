@@ -1,13 +1,13 @@
 package br.com.fascari.gof.chainofresponsibility.middlewares;
 
-public class CheckPermissionMiddleware extends Middleware{
+public class CheckPermissionMiddleware extends Middleware {
     @Override
     public boolean check(String email, String password) {
-       if(email.equals("master@hcode.com.br")){
-           System.out.println("Bem vindo Administrador!");
+        if (email.equals("master@hcode.com.br")) {
+            System.out.println("Bem vindo Administrador!");
             return true;
-       }
+        }
         System.out.println("Bem vindo!");
-       return checkNext(email, password);
+        return checkNext(email, password);
     }
 }
